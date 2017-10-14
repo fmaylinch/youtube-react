@@ -1,8 +1,15 @@
-import React from 'react';
+import React from 'react'
+import VideoItem from './components/VideoItem'
 
 const App = function() {
 
-  return <div>Hello</div>;
+  return (
+    <div>
+      <VideoItem/>
+      <VideoItem/>
+      <VideoItem/>
+    </div>
+  )
 }
 
-export default App;
+export default App
