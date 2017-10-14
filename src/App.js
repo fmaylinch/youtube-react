@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = function() {
 
-  return React.createElement('div', null, "Hello");
+  return <div>Hello</div>;
 }
 
 export default App;
