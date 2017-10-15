@@ -5,9 +5,7 @@ const App = function() {
 
   return (
     <div>
-      <VideoItem/>
-      <VideoItem/>
-      <VideoItem/>
+      <VideoItem videoId="6KxtgS2lU94" title="Björk - Army Of Me"/>
     </div>
   )
 }
