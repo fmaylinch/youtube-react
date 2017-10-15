@@ -1,17 +1,14 @@
 import React from 'react'
 import VideoItem from './components/VideoItem'
+import youtubeApiSample from './youtube-api-sample.json'
 
-const App = function() {
+const App = () => {
 
-  const videos = [
-    { videoId: "6KxtgS2lU94", title: "Björk - Army Of Me" },
-    { videoId: "1uYWYWPc9HU", title: "Radiohead - Karma Police" },
-    { videoId: "3mbBbFH9fAg", title: "Soundgarden - Black Hole Sun" }
-  ]
+  const videos = youtubeApiSample.items
 
-  const videoItems = videos.map(function(v) {
-    return <VideoItem key={v.videoId} videoId={v.videoId} title={v.title}/>
-  })
+  const videoItems = videos
+    .filter(v => v.id.kind === "youtube#video")
+    .map(v => <VideoItem key={v.id.videoId} videoId={v.id.videoId} title={v.snippet.title}/>)
 
   return (
     <div>{videoItems}</div>
