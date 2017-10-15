@@ -19,7 +19,10 @@ class App extends Component {
 
         const videos = response.data.items
           .filter(v => v.id.kind === "youtube#video")
-          .map(v => ({id: v.id.videoId, title: v.snippet.title}))
+          .map(v => ({
+            id: v.id.videoId,
+            title: v.snippet.title,
+            image: v.snippet.thumbnails.medium}))
 
         this.setState({ videos: videos })
 
