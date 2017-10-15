@@ -6,9 +6,8 @@ const VideoItem = function(props) {
 
   return (
     <div>
-      <h3>{props.title}</h3>
       <iframe title={props.title} src={src}
-        width="560" height="315"
+        width="320" height="180"
         frameBorder="0" allowFullScreen></iframe>
     </div>
   )
