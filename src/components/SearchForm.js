@@ -14,7 +14,8 @@ class SearchForm extends Component {
     }
   }
 
-  sendValue() {
+  sendValue(event) {
+    event.preventDefault();
     this.props.onSend(this.state.inputValue)
   }
 
@@ -26,17 +27,14 @@ class SearchForm extends Component {
   render() {
 
     return (
-      <p>
+      <form onSubmit={(event) => this.sendValue(event)}>
         <input
           value={this.state.inputValue}
           placeholder={this.props.placeholder}
           onChange={(event) => this.updateInputValue(event.target.value)}
         />
-        <button
-          onClick={(event) => this.sendValue()}>
-          Search
-        </button>
-      </p>
+        <button>Search</button>
+      </form>
     )
   }
 }
