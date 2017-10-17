@@ -8,10 +8,19 @@ class App extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { videos: [] }
+    this.state = {
+      searchTerm: "",
+      videos: []
+    }
+  }
+
+  /** Searches videos using state.searchTerm */
+  searchVideos() {
+
+    console.log("Searching videos: " + this.state.searchTerm)
 
     const searchApi = "https://www.googleapis.com/youtube/v3/search"
-    const queryTerm = encodeURIComponent("st vincent")
+    const queryTerm = encodeURIComponent(this.state.searchTerm)
     const url = searchApi + "?q=" + queryTerm + "&key=" + apiKey + "&maxResults=10&part=snippet"
 
     axios.get(url)
@@ -30,13 +39,31 @@ class App extends Component {
       .catch((error) => {
         console.error(error);
       });
+  }
 
+  /** Updates the state.searchTerm */
+  updateSearchTerm(value) {
+    this.setState({searchTerm: value})
   }
 
   render() {
 
     return (
-      <VideoList videos={this.state.videos}></VideoList>
+      <div>
+        <p>
+          <input
+            value={this.state.searchTerm}
+            placeholder="Search videos"
+            onChange={(event) => this.updateSearchTerm(event.target.value)}
+          />
+          <button
+            onClick={(event) => this.searchVideos()}>
+            Search
+          </button>
+        </p>
+
+        <VideoList videos={this.state.videos}></VideoList>
+      </div>
     )
   }
 }
