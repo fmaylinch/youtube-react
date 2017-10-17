@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import VideoList from './components/VideoList'
+import SearchForm from './components/SearchForm'
 import axios from 'axios'
 import apiKey from './youtube-api-key.json'
 
@@ -9,18 +10,17 @@ class App extends Component {
     super(props)
 
     this.state = {
-      searchTerm: "",
       videos: []
     }
   }
 
   /** Searches videos using state.searchTerm */
-  searchVideos() {
+  searchVideos(searchTerm) {
 
-    console.log("Searching videos: " + this.state.searchTerm)
+    console.log("Searching videos: " + searchTerm)
 
     const searchApi = "https://www.googleapis.com/youtube/v3/search"
-    const queryTerm = encodeURIComponent(this.state.searchTerm)
+    const queryTerm = encodeURIComponent(searchTerm)
     const url = searchApi + "?q=" + queryTerm + "&key=" + apiKey + "&maxResults=10&part=snippet"
 
     axios.get(url)
@@ -41,27 +41,11 @@ class App extends Component {
       });
   }
 
-  /** Updates the state.searchTerm */
-  updateSearchTerm(value) {
-    this.setState({searchTerm: value})
-  }
-
   render() {
 
     return (
       <div>
-        <p>
-          <input
-            value={this.state.searchTerm}
-            placeholder="Search videos"
-            onChange={(event) => this.updateSearchTerm(event.target.value)}
-          />
-          <button
-            onClick={(event) => this.searchVideos()}>
-            Search
-          </button>
-        </p>
-
+        <SearchForm onSend={(value) => this.searchVideos(value)} />
         <VideoList videos={this.state.videos}></VideoList>
       </div>
     )
