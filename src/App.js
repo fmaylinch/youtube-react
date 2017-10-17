@@ -45,7 +45,10 @@ class App extends Component {
 
     return (
       <div>
-        <SearchForm onSend={(value) => this.searchVideos(value)} />
+        <SearchForm
+          placeholder="Search videos"
+          onSend={(value) => this.searchVideos(value)} />
+          
         <VideoList videos={this.state.videos}></VideoList>
       </div>
     )
