@@ -2,20 +2,37 @@
 
 This project was created with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+To try it, execute the following (you'll need [git](https://git-scm.com/) and [node](https://nodejs.org)) on the command line:
+
+    $ git clone https://github.com/fmaylinch/youtube-react.git
+    $ cd youtube-react
+    $ npm install
+    $ npm start
+
+The app should automatically open in the browser on http://localhost:3000. For the search to work you will need to get a Youtube API key (see **step10** below for instructions) and put that key in the file `youtube-api-key.json`.
+
+To stop the application press `Ctrl + C` from the command line. To start again you just need to execute `npm start`.
+
 You may checkout tags to see the project in each step. For example `git checkout step01` to see the app in its first step. List all tags (steps) with `git tag -n`.
 
-## First steps for using create-react-app
+## Getting started with create-react-app
+
+If you want to start a project yourself:
 
 1. Install node from [nodejs.org](https://nodejs.org) or using [nvm](https://github.com/creationix/nvm).
 2. Install [Create React App](https://github.com/facebookincubator/create-react-app): `npm install --global create-react-app`.
 3. You may use [yarn](https://yarnpkg.com) to install local node packages: `npm install --global yarn`.  Then you could do `yarn add PACKAGE` instead of `npm install --save PACKAGE`.
 4. Execute `create-react-app PROJECT_NAME`. Then you can enter `cd PROJECT_NAME` and execute `npm start` or `yarn start` to launch the app.
+5. Have a look at the [official tutorial](https://reactjs.org/tutorial/tutorial.html) and/or follow the steps in this project.
 
-## Resources
+## Atom plugins
 
-[React official page](https://reactjs.org) and [tutorial](https://reactjs.org/tutorial/tutorial.html).
+Here's a list of useful plugins you may want to install when developing React (or other frontend applications) with Atom:
 
-Atom plugins: [language-babel](https://atom.io/packages/language-babel), [linter-eslint](https://atom.io/packages/linter-eslint), [emmet](https://atom.io/packages/emmet) ([enable in JSX](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)), [js-hyperclick](https://atom.io/packages/js-hyperclick).
+- [language-babel](https://atom.io/packages/language-babel) : syntax highlighting
+- [linter-eslint](https://atom.io/packages/linter-eslint) - js syntax check
+- [emmet](https://atom.io/packages/emmet) ([enable in JSX](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)) - html shortcuts
+- [js-hyperclick](https://atom.io/packages/js-hyperclick). - navigate through components
 
 ## Development steps
 
