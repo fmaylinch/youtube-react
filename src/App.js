@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import VideoList from './components/VideoList'
-import SearchForm from './components/SearchForm'
+import MenuBar from './components/MenuBar'
 import axios from 'axios'
 import apiKey from './youtube-api-key.json'
 
@@ -45,10 +45,9 @@ class App extends Component {
 
     return (
       <div>
-        <SearchForm
-          placeholder="Search videos"
-          onSend={(value) => this.searchVideos(value)} />
-          
+        <MenuBar
+          onSearch={(value) => this.searchVideos(value)} />
+
         <VideoList videos={this.state.videos}></VideoList>
       </div>
     )
