@@ -17,6 +17,11 @@ class App extends Component {
   /** Searches videos using state.searchTerm */
   searchVideos(searchTerm) {
 
+    if (apiKey.indexOf("get your Youtube API key") >= 0) {
+      alert("Put a Youtube API key in youtube-api-key.json")
+      return
+    }
+
     console.log("Searching videos: " + searchTerm)
 
     const searchApi = "https://www.googleapis.com/youtube/v3/search"
