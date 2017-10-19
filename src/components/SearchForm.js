@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SearchForm.css'
 
 /**
  * Form with an <input> and a <button> that
@@ -27,7 +28,7 @@ class SearchForm extends Component {
   render() {
 
     return (
-      <form onSubmit={(event) => this.sendValue(event)}>
+      <form className="search-form" onSubmit={(event) => this.sendValue(event)}>
         <input
           value={this.state.inputValue}
           placeholder={this.props.placeholder}

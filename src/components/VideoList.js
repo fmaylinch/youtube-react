@@ -1,5 +1,6 @@
 import React from 'react'
 import VideoItem from './VideoItem'
+import './VideoList.css'
 
 const VideoList = function(props) {
 
@@ -7,7 +8,7 @@ const VideoList = function(props) {
     .map(video => <VideoItem key={video.id} video={video} />)
 
   return (
-    <div>{videoItems}</div>
+    <div className="video-list">{videoItems}</div>
   )
 }
 

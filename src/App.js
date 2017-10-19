@@ -44,7 +44,7 @@ class App extends Component {
   render() {
 
     return (
-      <div>
+      <div className="app">
         <MenuBar
           onSearch={(value) => this.searchVideos(value)} />
 
