@@ -1,7 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+//@flow
 
-const VideoItem = function(props) {
+import React from 'react'
+
+type Video = {
+  image: { url: string },
+  title: string
+};
+
+const VideoItem = function(props: {video: Video}) {
 
   return (
     <div>
@@ -9,14 +15,5 @@ const VideoItem = function(props) {
     </div>
   )
 }
-
-VideoItem.propTypes = {
-  video: PropTypes.shape({
-    image: PropTypes.shape({
-      url: PropTypes.string
-    }),
-    title: PropTypes.string
-  })
-};
 
 export default VideoItem
