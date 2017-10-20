@@ -25,14 +25,30 @@ If you want to start a project yourself:
 4. Execute `create-react-app PROJECT_NAME`. Then you can enter `cd PROJECT_NAME` and execute `npm start` or `yarn start` to launch the app.
 5. Have a look at the [official tutorial](https://reactjs.org/tutorial/tutorial.html) and/or follow the steps in this project.
 
-## Atom plugins
+## Code editors
 
-Here's a list of useful plugins you may want to install when developing React (or other frontend applications) with Atom:
+Some popular code editors and IDEs:
+
+- [Atom](atom.io)
+- [Sublime Text](https://www.sublimetext.com/)
+- [Brackets](http://brackets.io/) has live editing
+- [VS Code](https://code.visualstudio.com/)
+- [Eclipse](https://www.eclipse.org/)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) is very powerful, but free version doesn't include js support
+
+[Atom](atom.io) is quite popular among frontend developers, but [VS Code](https://code.visualstudio.com/) is [gaining popularity](https://syntax.fm/show/012/why-is-everyone-switching-to-vs-code).
+
+Here's a list of useful [Atom](atom.io) plugins I installed:
 
 - [language-babel](https://atom.io/packages/language-babel) : syntax highlighting
 - [linter-eslint](https://atom.io/packages/linter-eslint) - js syntax check
 - [emmet](https://atom.io/packages/emmet) ([enable in JSX](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)) - html shortcuts
 - [js-hyperclick](https://atom.io/packages/js-hyperclick). - navigate through components
+
+Plugins for [VS Code](https://code.visualstudio.com/) I installed:
+
+- [sublime-babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) : js enhancements
+- [git history (log)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
 ## Development steps
 
