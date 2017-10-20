@@ -1,12 +1,15 @@
+//@flow
+
 import React, { Component } from 'react'
 import VideoList from './components/VideoList'
+import type { VideosObject } from './components/types'
 import MenuBar from './components/MenuBar'
 import axios from 'axios'
 import apiKey from './youtube-api-key.json'
 
-class App extends Component {
+class App extends Component<void, VideosObject> {
 
-  constructor(props) {
+  constructor(props: void) {
     super(props)
 
     this.state = {
@@ -15,7 +18,7 @@ class App extends Component {
   }
 
   /** Searches videos using state.searchTerm */
-  searchVideos(searchTerm) {
+  searchVideos(searchTerm: string) {
 
     if (apiKey.indexOf("get your Youtube API key") >= 0) {
       alert("Put a Youtube API key in youtube-api-key.json")
