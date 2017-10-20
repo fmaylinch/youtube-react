@@ -53,7 +53,7 @@ class App extends Component {
         <MenuBar
           onSearch={(value) => this.searchVideos(value)} />
 
-        <VideoList videos={this.state.videos}></VideoList>
+        <VideoList videos={this.state.videos} />
       </div>
     )
   }
