@@ -20,7 +20,7 @@ const MenuBar = (props: Props) => (
     <img className="logo" src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg" alt="logo"/>
     <SearchForm
       placeholder="Search videos"
-      onSend={(value) => props.onSearch(value)} />
+      onSend={(value: string) => props.onSearch(value)} />
   </div>
 )
 

@@ -54,7 +54,7 @@ class App extends Component<void, VideosObject> {
     return (
       <div className="app">
         <MenuBar
-          onSearch={(value) => this.searchVideos(value)} />
+          onSearch={(value: string) => this.searchVideos(value)} />
 
         <VideoList videos={this.state.videos} />
       </div>

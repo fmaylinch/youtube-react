@@ -41,11 +41,11 @@ class SearchForm extends Component<Props, State> {
   render() {
 
     return (
-      <form className="search-form" onSubmit={(event) => this.sendValue(event)}>
+      <form className="search-form" onSubmit={(event: Event) => this.sendValue(event)}>
         <input
           value={this.state.inputValue}
           placeholder={this.props.placeholder}
-          onChange={(event) => this.updateInputValue(event.target.value)}
+          onChange={(event: SyntheticEvent<HTMLInputElement>) => this.updateInputValue(event.currentTarget.value)}
         />
         <button>Search</button>
       </form>
