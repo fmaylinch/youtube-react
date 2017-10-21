@@ -1,13 +1,26 @@
+//@flow
+
 import React, { Component } from 'react'
 import './SearchForm.css'
+
+
+type Props = {
+	placeholder: string,
+	onSend: (value: string) => void
+}
+
+type State = {
+	inputValue: string
+}
+
 
 /**
  * Form with an <input> and a <button> that
  * calls onSend(inputValue) when clicked
  */
-class SearchForm extends Component {
+class SearchForm extends Component<Props, State> {
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props)
 
     this.state = {
@@ -15,13 +28,13 @@ class SearchForm extends Component {
     }
   }
 
-  sendValue(event) {
+  sendValue(event: Event) {
     event.preventDefault();
     this.props.onSend(this.state.inputValue)
   }
 
   /** Updates the state.inputValue */
-  updateInputValue(value) {
+  updateInputValue(value: string) {
     this.setState({inputValue: value})
   }
 
