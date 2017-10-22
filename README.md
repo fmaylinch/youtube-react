@@ -21,7 +21,7 @@ I recommend you to [create your own application](#getting-started-with-create-re
 
 **step01**: Project created with `create-react-app`.
 
-**step02**: Remove some code that `create-react-app` created to start with an even simpler example that doesn't use JSX.
+**step02**: Remove some code that `create-react-app` created to start with an even simpler example that [doesn't use JSX](https://reactjs.org/docs/react-without-jsx.html).
 
 **step03**: Use of [JSX](https://reactjs.org/docs/jsx-in-depth.html) to simplify code.
 
@@ -41,7 +41,7 @@ I recommend you to [create your own application](#getting-started-with-create-re
 
 To get a Youtube API key go to [Google APIs](https://console.developers.google.com/apis) and look for Youtube (here's a [direct link](https://console.developers.google.com/apis/library/youtube.googleapis.com) to it). Enable that API; you have to create a project if you don't have one. Then generate an API key in [credentials](https://console.developers.google.com/apis/credentials). You may explore the [Youtube API endpoints ](https://developers.google.com/apis-explorer/?#p/youtube/v3/), in particular the [search](https://developers.google.com/apis-explorer/?#p/youtube/v3/youtube.search.list) (fill `part` with `snippet` and `q` with your query).
 
-**step11**: Add an `<input>` whose value is linked to the state (`searchTerm`) and `<button>` that `onClick` searches the videos using the `searchTerm`.
+**step11**: Add an `<input>` whose value is linked to the state (`searchTerm`) via the `onChange` [event](https://reactjs.org/docs/events.html) and a `<button>` that `onClick` searches the videos using the `searchTerm`.
 
 **step12**: Refactor: create component `SearchForm` and notify `App` ([lift state up](https://reactjs.org/docs/lifting-state-up.html)) through a callback so it can refresh `VideoList` .
 
@@ -55,12 +55,18 @@ If you want to go deeper check this article about [component communication strat
 
 I highly recommend learning [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ([video tutorial](https://flexbox.io/) and [little game](http://flexboxfroggy.com/)) and [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) ([little game](http://cssgridgarden.com/)). See the intro note [here](https://wdrl.info/archive/202).
 
+**step16**: Type checking using [propTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) in `VideoItem`.
+
+**step17**:  Type checking using [flow](https://flow.org/) instead of propTypes. See [adding flow](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow) and [flow docs about React](https://flow.org/en/docs/react/).
+
+Note: I had to add [this fix](http://international.github.io/2017/03/24/17-18-fix_vscode_flow_Type_aliases_can_be_used_only_in_a_.ts_file) in VS Code for flow to work.
+
+
+
 ----
 
 **Pending**:
 
-- Static types: propTypes
-- Static types: flow
 - Create VideoDetail and display it in another "page" with React Router
 - React dev tools
 - Tests with Jest and enzyme
@@ -91,14 +97,17 @@ Some popular code editors and IDEs:
 
 Here's a list of useful [Atom](atom.io) plugins I installed:
 
-- [language-babel](https://atom.io/packages/language-babel) : js/jsx enhancements
-- [linter-eslint](https://atom.io/packages/linter-eslint) - js syntax check
+- [language-babel](https://atom.io/packages/language-babel) - js/jsx enhancements
+- [linter-eslint](https://atom.io/packages/linter-eslint) - js linting
 - [emmet](https://atom.io/packages/emmet) ([enable in JSX](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)) - html shortcuts
 - [js-hyperclick](https://atom.io/packages/js-hyperclick). - navigate through components
+- [flow-ide](https://atom.io/packages/flow-ide) - flow integration
 
 Plugins for [VS Code](https://code.visualstudio.com/) I installed:
 
-- [sublime-babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) : js/jsx enhancements
+- [sublime-babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) - js/jsx enhancements
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - js linting
+- [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) or [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) - flow integration
 - [git history (log)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
 ## Learn more
