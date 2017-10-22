@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import type { ContextRouter } from 'react-router-dom'
 import VideoList from './components/VideoList'
 import VideoPlayer from './components/VideoDetail'
 import type { VideosObject } from './components/types'
@@ -43,7 +44,9 @@ class App extends Component<void, VideosObject> {
             title: v.snippet.title,
             image: v.snippet.thumbnails.medium}))
 
-        this.setState({ videos: videos })
+				console.log(`Displaying ${videos.length} videos`)
+
+				this.setState({ videos: videos })
 
       })
       .catch((error) => {
@@ -55,14 +58,24 @@ class App extends Component<void, VideosObject> {
 
     return (
       <div className="app">
-        <MenuBar
-          onSearch={(value: string) => this.searchVideos(value)} />
-
         <BrowserRouter>
+        <div>
+
+          <Route render={(props: ContextRouter) => (
+            <MenuBar
+              onSearch={(value: string) => {
+                this.searchVideos(value)
+                props.history.push('/')
+							}}
+            />
+          )}/>
+
           <Switch>
+
             <Route exact path='/' render={() => {
               return <VideoList videos={this.state.videos}/>
             }} />
+
             <Route path='/detail/:id' component={VideoPlayer} />
 
             <Redirect from="*" to="/" />
@@ -70,6 +83,8 @@ class App extends Component<void, VideosObject> {
             <Route component={() => <h1>Page not found, sorry!</h1>} />
 
           </Switch>
+
+        </div>
         </BrowserRouter>
       </div>
     )
