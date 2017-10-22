@@ -1,7 +1,7 @@
 //@flow
 
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import VideoList from './components/VideoList'
 import VideoPlayer from './components/VideoDetail'
 import type { VideosObject } from './components/types'
@@ -64,6 +64,11 @@ class App extends Component<void, VideosObject> {
               return <VideoList videos={this.state.videos}/>
             }} />
             <Route path='/detail/:id' component={VideoPlayer} />
+
+            <Redirect from="*" to="/" />
+            {/* remove the Redirect to display the "not found" route */}
+            <Route component={() => <h1>Page not found, sorry!</h1>} />
+
           </Switch>
         </BrowserRouter>
       </div>
