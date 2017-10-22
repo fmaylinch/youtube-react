@@ -57,17 +57,20 @@ I highly recommend learning [flexbox](https://css-tricks.com/snippets/css/a-guid
 
 **step16**: Type checking using [propTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) in `VideoItem`.
 
-**step17**:  Type checking using [flow](https://flow.org/) instead of propTypes. See [adding flow](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow) and [flow docs about React](https://flow.org/en/docs/react/).
+**step17**:  Type checking using [Flow](https://flow.org/) instead of propTypes. See [adding Flow](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow) ([fix for VS Code](http://international.github.io/2017/03/24/17-18-fix_vscode_flow_Type_aliases_can_be_used_only_in_a_.ts_file)) and [Flow docs about React](https://flow.org/en/docs/react/).
 
-Note: I had to add [this fix](http://international.github.io/2017/03/24/17-18-fix_vscode_flow_Type_aliases_can_be_used_only_in_a_.ts_file) in VS Code for flow to work.
+See this article about [Flow and TypeScript](https://engineering.tumblr.com/post/165261504692/flow-and-typescript).
 
+**step18**: Use React Router to display `VideoList` when searching and `VideoDetail` when clicking one video in the list.
 
+You need to install [react-router-dom](https://www.npmjs.com/package/react-router-dom).
+
+You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf). About [navigating programmatically](https://stackoverflow.com/a/42121109/1121497), I used the Route approach from that answer. About Flow types, I just could find this [type definition file](https://github.com/flowtype/flow-typed/blob/master/definitions/npm/react-router-dom_v4.x.x/flow_v0.53.x-/react-router-dom_v4.x.x.js), although it's a bit hard to read.
 
 ----
 
 **Pending**:
 
-- Create VideoDetail and display it in another "page" with React Router
 - React dev tools
 - Tests with Jest and enzyme
 - Build and deploy with surge.sh
@@ -101,13 +104,13 @@ Here's a list of useful [Atom](atom.io) plugins I installed:
 - [linter-eslint](https://atom.io/packages/linter-eslint) - js linting
 - [emmet](https://atom.io/packages/emmet) ([enable in JSX](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)) - html shortcuts
 - [js-hyperclick](https://atom.io/packages/js-hyperclick). - navigate through components
-- [flow-ide](https://atom.io/packages/flow-ide) - flow integration
+- [flow-ide](https://atom.io/packages/flow-ide) - Flow integration
 
 Plugins for [VS Code](https://code.visualstudio.com/) I installed:
 
 - [sublime-babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) - js/jsx enhancements
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - js linting
-- [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) - flow integration
+- [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) or [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) - Flow integration
 - [git history (log)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
 ## Learn more
