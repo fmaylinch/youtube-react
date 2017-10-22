@@ -1,7 +1,9 @@
 //@flow
 
 import React, { Component } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import VideoList from './components/VideoList'
+import VideoPlayer from './components/VideoDetail'
 import type { VideosObject } from './components/types'
 import MenuBar from './components/MenuBar'
 import axios from 'axios'
@@ -56,7 +58,14 @@ class App extends Component<void, VideosObject> {
         <MenuBar
           onSearch={(value: string) => this.searchVideos(value)} />
 
-        <VideoList videos={this.state.videos} />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' render={() => {
+              return <VideoList videos={this.state.videos}/>
+            }} />
+            <Route path='/detail/:id' component={VideoPlayer} />
+          </Switch>
+        </BrowserRouter>
       </div>
     )
   }
