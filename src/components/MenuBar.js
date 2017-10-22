@@ -7,7 +7,7 @@ import './MenuBar.css'
 
 type Props = {
 	onSearch: (value: string) => void
-}
+};
 
 
 /**

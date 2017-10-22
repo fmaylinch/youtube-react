@@ -7,11 +7,11 @@ import './SearchForm.css'
 type Props = {
 	placeholder: string,
 	onSend: (value: string) => void
-}
+};
 
 type State = {
 	inputValue: string
-}
+};
 
 
 /**
