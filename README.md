@@ -117,6 +117,8 @@ Plugins for [VS Code](https://code.visualstudio.com/) I installed:
 
 ## Learn more
 
+#### Tutorials and more   
+
 Besides following the steps in this project, you may learn more here:
 
 - https://reactjs.org/tutorial/tutorial.html
@@ -125,4 +127,14 @@ Besides following the steps in this project, you may learn more here:
 - https://reactjs.co
 - https://medium.freecodecamp.org/reactjs-concepts-c83f9b53eac2
 - https://wdrl.info/ - newsletter about web development
+
+#### Tools
+
+[Here](https://github.com/facebook/react/wiki/Complementary-Tools) you can find related React tools.
+
+For example, the [React dev tools](https://github.com/facebook/react-devtools), which you can use to:
+
+- See your page structure like in Elements but more React-friendly.
+- Select an element and in the Console refer to it as `$r`.
+- Inspect an element on the page (goes to Elements) and then go to React tab to locate the component.
 
