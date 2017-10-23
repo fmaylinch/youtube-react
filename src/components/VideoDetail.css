@@ -5,6 +5,11 @@
   align-items: center;
 }
 
-.video-detail p {
+.video-detail iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.video-detail div {
   width: 560px;
 }

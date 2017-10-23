@@ -68,7 +68,6 @@ class VideoDetail extends Component<ContextRouter, State> {
 		return (
       <div className="video-detail">
         <iframe title="video" src={`https://www.youtube.com/embed/` + this.props.match.params.id}
-                width="560" height="315"
                 frameBorder="0" allowFullScreen />
         <div>{loadingOrData}</div>
       </div>
