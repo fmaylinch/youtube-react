@@ -33,7 +33,7 @@ I recommend you to [create your own application](#getting-started-with-create-re
 
 **step07**: Display a list of `VideoItem` (from hardcoded array) using the [key](https://reactjs.org/tutorial/tutorial.html#keys) property.
 
-**step08**: Load list of videos from sample JSON file.
+**step08**: Load list of videos from sample [JSON](https://raw.githubusercontent.com/fmaylinch/youtube-react/e3404ae9a2dc6c2e91c0becb7ec62b6d42c1ac2e/src/youtube-api-sample.json) file.
 
 **step09**: Create `VideoList` component (refactor).
 
