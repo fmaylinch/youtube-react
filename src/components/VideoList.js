@@ -20,9 +20,12 @@ const VideoList = function(props: Props) {
   } else {
     loadingOrVideos = props.videos
       .map(video => (
-        <Link to={'/detail/' + video.id} key={video.id}>
-          <VideoItem video={video} />
-        </Link>
+        <div className="item">
+          <Link to={'/detail/' + video.id} key={video.id}>
+            <VideoItem video={video} />
+            <div className="video-title">{video.title}</div>
+          </Link>
+        </div>
       ))
   }
 

@@ -4,6 +4,9 @@
   flex-direction: row;
   align-items: center;
   padding: 10px 100px;
+  background-color: white;
+  border-bottom: 2px solid #f3f3f3;
+  margin-bottom: 30px;
 }
 
 .menu-bar .search-form {
