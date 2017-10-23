@@ -5,18 +5,24 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 import type { ContextRouter } from 'react-router-dom'
 import VideoList from './components/VideoList'
 import VideoPlayer from './components/VideoDetail'
-import type { VideosObject } from './components/types'
+import type { Video } from './components/types'
 import MenuBar from './components/MenuBar'
 import axios from 'axios'
 import apiKey from './youtube-api-key.json'
 
-class App extends Component<void, VideosObject> {
+type State = {
+  videos: Array<Video>,
+  loading: boolean
+};
+
+class App extends Component<void, State> {
 
   constructor(props: void) {
     super(props)
 
     this.state = {
-      videos: []
+      videos: [],
+      loading: false
     }
   }
 
@@ -29,6 +35,7 @@ class App extends Component<void, VideosObject> {
     }
 
     console.log("Searching videos: " + searchTerm)
+    this.setState({ loading: true })
 
     const searchApi = "https://www.googleapis.com/youtube/v3/search"
     const queryTerm = encodeURIComponent(searchTerm)
@@ -46,7 +53,7 @@ class App extends Component<void, VideosObject> {
 
 				console.log(`Displaying ${videos.length} videos`)
 
-				this.setState({ videos: videos })
+				this.setState({ videos: videos, loading: false })
 
       })
       .catch((error) => {
@@ -72,9 +79,9 @@ class App extends Component<void, VideosObject> {
 
           <Switch>
 
-            <Route exact path='/' render={() => {
-              return <VideoList videos={this.state.videos}/>
-            }} />
+            <Route exact path='/' render={() => (
+                <VideoList videos={this.state.videos} loading={this.state.loading} />
+            )} />
 
             <Route path='/detail/:id' component={VideoPlayer} />
 

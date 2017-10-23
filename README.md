@@ -67,6 +67,8 @@ You need to install [react-router-dom](https://www.npmjs.com/package/react-route
 
 You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf). About [navigating programmatically](https://stackoverflow.com/a/42121109/1121497), I used the Route approach from that answer. About Flow types, I just could find this [type definition file](https://github.com/flowtype/flow-typed/blob/master/definitions/npm/react-router-dom_v4.x.x/flow_v0.53.x-/react-router-dom_v4.x.x.js), although it's a bit hard to read.
 
+**step19**: Use if/else [conditional rendering](http://www.react.express/conditional_rendering) for displaying a "loading..." message while loading the videos in `VideoList`.
+
 ----
 
 **Pending**:

@@ -4,7 +4,3 @@ export type Video = {
   image: { url: string },
   title: string
 };
-
-export type VideosObject = {
-  videos: Array<Video>
-};

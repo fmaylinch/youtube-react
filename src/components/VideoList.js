@@ -3,20 +3,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VideoItem from './VideoItem'
-import type { VideosObject } from './types'
+import type { Video } from './types'
 import './VideoList.css'
 
-const VideoList = function(props: VideosObject) {
+type Props = {
+  videos: Array<Video>,
+  loading: boolean
+};
 
-  const videoItems = props.videos
-    .map(video => (
-      <Link to={'/detail/' + video.id} key={video.id}>
-        <VideoItem video={video} />
-      </Link>
-    ))
+const VideoList = function(props: Props) {
+
+  let loadingOrVideos;
+
+  if (props.loading) {
+    loadingOrVideos = <div>Loading...</div>
+  } else {
+    loadingOrVideos = props.videos
+      .map(video => (
+        <Link to={'/detail/' + video.id} key={video.id}>
+          <VideoItem video={video} />
+        </Link>
+      ))
+  }
 
   return (
-    <div className="video-list">{videoItems}</div>
+    <div className="video-list">{loadingOrVideos}</div>
   )
 }
 
