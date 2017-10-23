@@ -4,3 +4,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.video-detail p {
+  width: 560px;
+}
