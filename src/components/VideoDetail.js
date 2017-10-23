@@ -60,7 +60,7 @@ class VideoDetail extends Component<ContextRouter, State> {
       loadingOrData = (
         <div>
           <h2>{this.state.video.title}</h2>
-          <p>{this.state.video.description}</p>
+          <p dangerouslySetInnerHTML={{__html: linkify(this.state.video.description)}}/>
         </div>
       )
     }
@@ -74,6 +74,11 @@ class VideoDetail extends Component<ContextRouter, State> {
       </div>
 		)
   }
+}
+
+// TODO: improve, maybe using https://www.npmjs.com/package/react-linkify
+function linkify(text) {
+	return text.replace(/((http|https):[^\s]+)/g, "<a target='_blank' href=\"$1\">$1</a>")
 }
 
 export default VideoDetail
