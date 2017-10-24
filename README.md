@@ -4,10 +4,12 @@ This project was created with [Create React App](https://github.com/facebookincu
 
 To try it, execute the following (you'll need [git](https://git-scm.com/) and [node](https://nodejs.org)) on the command line:
 
-    $ git clone https://github.com/fmaylinch/youtube-react.git
-    $ cd youtube-react
-    $ npm install
-    $ npm start
+```
+$ git clone https://github.com/fmaylinch/youtube-react.git
+$ cd youtube-react
+$ npm install
+$ npm start
+```
 
 The app should automatically open in the browser on http://localhost:3000. For the search to work you will need to get a Youtube API key (see **step10** below for instructions) and put that key in the file `youtube-api-key.json`.
 
@@ -47,7 +49,7 @@ To get a Youtube API key go to [Google APIs](https://console.developers.google.c
 
 **step13**: Improve `SearchForm` (more flexible, send with `ENTER` key).
 
-**step14**: Create a `MenuBar` to organize the layout. `SearchForm` now sends callback to `MenuBar` and `MenuBar` propagates it to `App` .
+**step14**: Create a `MenuBar` to organise the layout. `SearchForm` now sends callback to `MenuBar` and `MenuBar` propagates it to `App` .
 
 If you want to go deeper check this article about [component communication strategies in React](http://andrewhfarmer.com/component-communication). Popular state management frameworks: [Redux](http://redux.js.org) ([if you really need it](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)) and [Mobx](https://github.com/mobxjs/mobx).
 
@@ -73,7 +75,6 @@ You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn
 
 **Pending**:
 
-- React dev tools
 - Tests with Jest and enzyme
 - Build and deploy with surge.sh
 
@@ -85,7 +86,9 @@ If you want to create a project from scratch:
 2. Install [Create React App](https://github.com/facebookincubator/create-react-app): `npm install --global create-react-app`.
 3. You may use [yarn](https://yarnpkg.com) to install local node packages: `npm install --global yarn`.  Then you could do `yarn add PACKAGE` instead of `npm install --save PACKAGE`.
 4. Execute `create-react-app PROJECT_NAME`. Then you can enter `cd PROJECT_NAME` and execute `npm start` or `yarn start` to launch the app.
-5. Pick your favourite [code editor](#code-editors) and [learn more](#learn-more).
+5. You can stop the app pressing `Ctrl+C`.
+6. If you use [git](https://git-scm.com/), create a `.gitignore` file and add `node_modules` there, since this folder should not be included in the repository (it may be recreated running `npm install`).
+7. Pick your favourite [code editor](#code-editors) and [learn more](#learn-more).
 
 ## Code editors
 
@@ -138,3 +141,8 @@ For example, the [React dev tools](https://github.com/facebook/react-devtools), 
 - Select an element and in the Console refer to it as `$r`.
 - Inspect an element on the page (goes to Elements) and then go to React tab to locate the component.
 
+## Notes
+
+This file was edited using [classeur](https://app.classeur.io) Markdown editor.
+
+If you have Mac/iPhone you may want to try the [bear](http://www.bear-writer.com/) editor.
