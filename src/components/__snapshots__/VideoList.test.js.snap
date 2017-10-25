@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoList renders component correctly 1`] = `
+<div
+  className="video-list"
+>
+  <div
+    className="item"
+    key="4TPqUvy1vYU"
+  >
+    <Link
+      replace={false}
+      to="/detail/4TPqUvy1vYU"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "4TPqUvy1vYU",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/4TPqUvy1vYU/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - New York (Official Video)",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - New York (Official Video)
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="h9TlaYxoOO8"
+  >
+    <Link
+      replace={false}
+      to="/detail/h9TlaYxoOO8"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "h9TlaYxoOO8",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/h9TlaYxoOO8/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - \\"Los Ageless\\" (Official Video)",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - "Los Ageless" (Official Video)
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="hwFx0ROBf7o"
+  >
+    <Link
+      replace={false}
+      to="/detail/hwFx0ROBf7o"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "hwFx0ROBf7o",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/hwFx0ROBf7o/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - Pills (official audio)",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - Pills (official audio)
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="n48vQgfXygc"
+  >
+    <Link
+      replace={false}
+      to="/detail/n48vQgfXygc"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "n48vQgfXygc",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/n48vQgfXygc/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - New York",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - New York
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="mVAxUMuhz98"
+  >
+    <Link
+      replace={false}
+      to="/detail/mVAxUMuhz98"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "mVAxUMuhz98",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/mVAxUMuhz98/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - Digital Witness",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - Digital Witness
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="G8jxAKmojxY"
+  >
+    <Link
+      replace={false}
+      to="/detail/G8jxAKmojxY"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "G8jxAKmojxY",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/G8jxAKmojxY/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - Los Ageless (official audio)",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - Los Ageless (official audio)
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="jz2EbH3xO_8"
+  >
+    <Link
+      replace={false}
+      to="/detail/jz2EbH3xO_8"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "jz2EbH3xO_8",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/jz2EbH3xO_8/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent Performs 'Los Ageless'",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent Performs 'Los Ageless'
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="Itt0rALeHE8"
+  >
+    <Link
+      replace={false}
+      to="/detail/Itt0rALeHE8"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "Itt0rALeHE8",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/Itt0rALeHE8/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - Cruel (Official Video)",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - Cruel (Official Video)
+      </div>
+    </Link>
+  </div>
+  <div
+    className="item"
+    key="TAdARF4rGcQ"
+  >
+    <Link
+      replace={false}
+      to="/detail/TAdARF4rGcQ"
+    >
+      <VideoItem
+        video={
+          Object {
+            "id": "TAdARF4rGcQ",
+            "image": Object {
+              "height": 180,
+              "url": "https://i.ytimg.com/vi/TAdARF4rGcQ/mqdefault.jpg",
+              "width": 320,
+            },
+            "title": "St. Vincent - Birth In Reverse",
+          }
+        }
+      />
+      <div
+        className="video-title"
+      >
+        St. Vincent - Birth In Reverse
+      </div>
+    </Link>
+  </div>
+</div>
+`;

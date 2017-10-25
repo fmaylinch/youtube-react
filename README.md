@@ -79,12 +79,7 @@ You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn
 
 If you want to use [Flow](https://flow.org/) in tests you may install [flow-typed](https://www.npmjs.com/package/flow-typed) (`yarn add flow-typed`) and then install the appropriate jest type definitions. To do so, I found out the jest version with `yarn list | grep " jest@"`, which in my case was `jest@20.0.4` and then installed them with `node_modules/.bin/flow-typed install jest@20.0.4`.
 
-----
-
-**Pending**:
-
-- Tests with Jest and enzyme
-- Build and deploy with surge.sh
+**step23**: Add [component tests](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#testing-components). It is recommended to use [Enzyme](http://airbnb.io/enzyme/) so execute `yarn add enzyme react-test-renderer jest-enzyme enzyme-adapter-react-16`. I found the need for the last package [here](https://stackoverflow.com/a/46628165/1121497). You also need to create a `src/setupTests.js` with the code indicated there.
 
 ## Getting started with create-react-app
 
