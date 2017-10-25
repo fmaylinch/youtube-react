@@ -7,6 +7,7 @@ import VideoList from './components/VideoList'
 import VideoPlayer from './components/VideoDetail'
 import type { Video } from './components/types'
 import MenuBar from './components/MenuBar'
+import YoutubeUtil from './util/YoutubeUtil'
 import axios from 'axios'
 import apiKey from './youtube-api-key.json'
 
@@ -44,12 +45,7 @@ class App extends Component<void, State> {
     axios.get(url)
       .then((response) => {
 
-        const videos = response.data.items
-          .filter(v => v.id.kind === "youtube#video")
-          .map(v => ({
-            id: v.id.videoId,
-            title: v.snippet.title,
-            image: v.snippet.thumbnails.medium}))
+        const videos = YoutubeUtil.extractVideos(response.data)
 
 				console.log(`Displaying ${videos.length} videos`)
 
