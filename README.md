@@ -90,8 +90,7 @@ If you want to create a project from scratch:
 3. You may use [yarn](https://yarnpkg.com) to install local node packages: `npm install --global yarn`.  Then you could do `yarn add PACKAGE` instead of `npm install --save PACKAGE`.
 4. Execute `create-react-app PROJECT_NAME`. Then you can enter `cd PROJECT_NAME` and execute `npm start` or `yarn start` to launch the app.
 5. You can stop the app pressing `Ctrl+C`.
-6. If you use [git](https://git-scm.com/), create a `.gitignore` file and add `node_modules` there, since this folder should not be included in the repository (it may be recreated running `npm install`).
-7. Pick your favourite [code editor](#code-editors) and [learn more](#learn-more).
+6. Pick your favourite [code editor](#code-editors) and [learn more](#learn-more).
 
 ## Code editors
 
