@@ -1,7 +1,7 @@
 //@flow
 
 import React from 'react'
-import SearchForm from './SearchForm'
+import SearchFormRef from './SearchFormRef'
 import './MenuBar.css'
 
 
@@ -18,7 +18,7 @@ const MenuBar = (props: Props) => (
 
   <div className="menu-bar">
     <img className="logo" src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg" alt="logo"/>
-    <SearchForm
+    <SearchFormRef
       placeholder="Search videos"
       onSend={(value: string) => props.onSearch(value)} />
   </div>

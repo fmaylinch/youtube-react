@@ -71,6 +71,10 @@ You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn
 
 **step19**: Use if/else [conditional rendering](http://www.react.express/conditional_rendering) for displaying a "loading..." message while loading the videos in `VideoList`.
 
+**step20**: Load video data from `VideoDetail` so url is bookmarkable.
+
+**step21**: Use [refs](https://reactjs.org/docs/refs-and-the-dom.html) to get `HTMLFormElement` in `SearchFormRef` (alternative version to `SearchForm`). In this case, it's useful if a form has many fields and we don't need to synchronise them with state.
+
 ----
 
 **Pending**:
