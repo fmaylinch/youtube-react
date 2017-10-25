@@ -41,7 +41,7 @@ I recommend you to [create your own application](#getting-started-with-create-re
 
 **step10**: Search videos from Youtube API using [axios](https://github.com/axios/axios) (hardcoded query term). The `App` component is turned into a [class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) so it can have [state](https://reactjs.org/docs/state-and-lifecycle.html), which is updated when the videos are loaded.
 
-To get a Youtube API key go to [Google APIs](https://console.developers.google.com/apis) and look for Youtube (here's a [direct link](https://console.developers.google.com/apis/library/youtube.googleapis.com) to it). Enable that API; you have to create a project if you don't have one. Then generate an API key in [credentials](https://console.developers.google.com/apis/credentials). You may explore the [Youtube API endpoints ](https://developers.google.com/apis-explorer/?#p/youtube/v3/), in particular the [search](https://developers.google.com/apis-explorer/?#p/youtube/v3/youtube.search.list) (fill `part` with `snippet` and `q` with your query).
+To get a Youtube API key go to [Google APIs](https://console.developers.google.com/apis) and look for Youtube (here's a [direct link](https://console.developers.google.com/apis/library/youtube.googleapis.com) to it). Enable that API; you will be asked to create a project before, if you don't have one. Then generate an API key in [credentials](https://console.developers.google.com/apis/credentials). Click on *Create credentials*, then on *Help me choose*, select *Youtube API*, to be called from *Web browser (Javascript)*, accessing *public data*. Once you have the API key you may explore the [Youtube API endpoints ](https://developers.google.com/apis-explorer/?#p/youtube/v3/), in particular the [search](https://developers.google.com/apis-explorer/?#p/youtube/v3/youtube.search.list) (fill `part` with `snippet` and `q` with your query).
 
 **step11**: Add an `<input>` whose value is linked to the state (`searchTerm`) via the `onChange` [event](https://reactjs.org/docs/events.html) and a `<button>` that `onClick` searches the videos using the `searchTerm`.
 
@@ -136,9 +136,9 @@ Besides following the steps in this project, you may learn more here:
 
 #### Tools
 
-[Here](https://github.com/facebook/react/wiki/Complementary-Tools) you can find related React tools.
+At any point, you may quickly [deploy your React app with Surge](https://daveceddia.com/deploy-create-react-app-surge/). 
 
-For example, the [React dev tools](https://github.com/facebook/react-devtools), which you can use to:
+Check the [complementary tools](https://github.com/facebook/react/wiki/Complementary-Tools) for React. For example, the [React dev tools](https://github.com/facebook/react-devtools), which you can use to:
 
 - See your page structure like in Elements but more React-friendly.
 - Select an element and in the Console refer to it as `$r`.
@@ -146,6 +146,4 @@ For example, the [React dev tools](https://github.com/facebook/react-devtools), 
 
 ## Notes
 
-This file was edited using [classeur](https://app.classeur.io) Markdown editor.
-
-If you have Mac/iPhone you may want to try the [bear](http://www.bear-writer.com/) editor.
+This file was edited using [classeur](https://app.classeur.io) and [bear](http://www.bear-writer.com/).
