@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoItem renders component correctly 1`] = `
+<div>
+  <img
+    alt="St. Vincent - New York (Official Video)"
+    src="https://i.ytimg.com/vi/4TPqUvy1vYU/mqdefault.jpg"
+  />
+</div>
+`;
