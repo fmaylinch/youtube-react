@@ -1,12 +1,14 @@
+// @flow
 
 import YoutubeUtil from './YoutubeUtil'
+import type { Video } from '../components/types.js'
 import data from './api-search-sample.json'
 
 describe('YoutubeUtil', () => {
 
   it('extracts videos correctly', () => {
 
-    const videos = YoutubeUtil.extractVideos(data)
+    const videos: Array<Video> = YoutubeUtil.extractVideos(data)
 
     expect(videos.length).toEqual(9)
 

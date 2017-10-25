@@ -75,6 +75,10 @@ You may want to check this [React Router v4 Tutorial](https://medium.com/@pshrmn
 
 **step21**: Use [refs](https://reactjs.org/docs/refs-and-the-dom.html) to get `HTMLFormElement` in `SearchFormRef` (alternative version to `SearchForm`). In this case, it's useful if a form has many fields and we don't need to synchronise them with state.
 
+**step22**: Add [tests](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests). 
+
+If you want to use [Flow](https://flow.org/) in tests you may install [flow-typed](https://www.npmjs.com/package/flow-typed) (`yarn add flow-typed`) and then install the appropriate jest type definitions. To do so, I found out the jest version with `yarn list | grep " jest@"`, which in my case was `jest@20.0.4` and then installed them with `node_modules/.bin/flow-typed install jest@20.0.4`.
+
 ----
 
 **Pending**:

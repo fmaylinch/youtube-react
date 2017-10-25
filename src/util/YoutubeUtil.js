@@ -1,6 +1,6 @@
 // @flow
 
-import type { Video } from './../components/types'
+import type { Video } from '../components/types'
 
 export default class YoutubeUtil {
 
