@@ -117,7 +117,7 @@ Plugins for [VS Code](https://code.visualstudio.com/) I installed:
 
 - [sublime-babel](https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode) - js/jsx enhancements
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - js linting
-- [Flow Language Support](https://marketplace.visualstudio.com/items?itemName=flowtype.flow-for-vscode) or [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) - Flow integration
+- [vscode-flow-ide](https://marketplace.visualstudio.com/items?itemName=gcazaciuc.vscode-flow-ide) - Flow integration
 - [git history (log)](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
 ## Learn more
