@@ -21,7 +21,9 @@ class VideoDetail extends Component<ContextRouter, State> {
 			video: null,
 			loading: true
 		}
+	}
 
+	componentDidMount() {
 		this.loadVideo(this.props.match.params.id)
 	}
 
