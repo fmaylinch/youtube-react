@@ -128,6 +128,7 @@ Besides following the steps in this project, you may learn more here:
 
 - https://reactjs.org/tutorial/tutorial.html
 - https://egghead.io/courses/start-using-react-to-build-web-applications
+- http://learn.humanjavascript.com/react-ampersand
 - http://www.react.express
 - https://reactjs.co
 - https://medium.freecodecamp.org/reactjs-concepts-c83f9b53eac2
