@@ -132,6 +132,7 @@ Besides following the steps in this project, you may learn more here:
 - http://www.react.express
 - https://reactjs.co
 - https://medium.freecodecamp.org/reactjs-concepts-c83f9b53eac2
+- https://daveceddia.com/create-react-app-express-backend/
 - https://wdrl.info/ - newsletter about web development
 
 #### Tools
